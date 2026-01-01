@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Drone Weather Advisor",
+    "slug": "drone-weather-advisor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#667eea"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.droneweather.advisor",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs location access to provide accurate weather data for your drone flights.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs location access to provide accurate weather data for your drone flights."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#667eea"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.droneweather.advisor",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-location"
+    ]
+  }
+}

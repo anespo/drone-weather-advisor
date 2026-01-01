@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Weather Advisor - DJI Neo 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-helicopter"></i>
+                    <h1>Drone Weather Advisor</h1>
+                </div>
+                <div class="drone-model">
+                    <span>DJI Neo 2</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Location Section -->
+            <section class="location-section">
+                <div class="location-card">
+                    <h2><i class="fas fa-map-marker-alt"></i> Location</h2>
+                    <div class="location-info">
+                        <span id="location-text">Getting location...</span>
+                        <button id="refresh-location" class="btn-secondary">
+                            <i class="fas fa-sync-alt"></i> Refresh
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Flight Status Section -->
+            <section class="flight-status-section">
+                <div class="status-card" id="flight-status-card">
+                    <div class="status-header">
+                        <h2><i class="fas fa-plane"></i> Flight Status</h2>
+                        <div class="status-indicator" id="status-indicator">
+                            <span id="status-text">Checking...</span>
+                        </div>
+                    </div>
+                    <div class="status-details" id="status-details">
+                        <!-- Status details will be populated here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Current Weather Section -->
+            <section class="current-weather-section">
+                <div class="weather-card">
+                    <h2><i class="fas fa-cloud-sun"></i> Current Conditions</h2>
+                    <div class="current-weather" id="current-weather">
+                        <div class="loading">Loading weather data...</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Analysis Section -->
+            <section class="ai-analysis-section">
+                <div class="analysis-card">
+                    <h2><i class="fas fa-brain"></i> AI Weather Analysis</h2>
+                    <div class="analysis-content" id="ai-analysis">
+                        <div class="loading">Analyzing conditions...</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hourly Forecast Section -->
+            <section class="hourly-forecast-section">
+                <div class="forecast-card">
+                    <h2><i class="fas fa-clock"></i> 24-Hour Forecast</h2>
+                    <div class="hourly-forecast" id="hourly-forecast">
+                        <div class="loading">Loading forecast...</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5-Day Forecast Section -->
+            <section class="daily-forecast-section">
+                <div class="forecast-card">
+                    <h2><i class="fas fa-calendar-alt"></i> 5-Day Forecast</h2>
+                    <div class="daily-forecast" id="daily-forecast">
+                        <div class="loading">Loading forecast...</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Drone Specifications -->
+            <section class="specs-section">
+                <div class="specs-card">
+                    <h2><i class="fas fa-cog"></i> DJI Neo 2 Specifications</h2>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <i class="fas fa-wind"></i>
+                            <span class="spec-label">Max Wind Speed</span>
+                            <span class="spec-value">10 m/s (36 km/h)</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-thermometer-half"></i>
+                            <span class="spec-label">Operating Temp</span>
+                            <span class="spec-value">-10°C to 40°C</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-mountain"></i>
+                            <span class="spec-label">Max Altitude</span>
+                            <span class="spec-value">4000m</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span class="spec-label">Water Resistance</span>
+                            <span class="spec-value">None</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Drone Weather Advisor. Weather data provided by OpenWeatherMap.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
