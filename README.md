@@ -294,7 +294,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🐛 **Issues**: [GitHub Issues](https://github.com/anespo/drone-weather-advisor/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/anespo/drone-weather-advisor/discussions)
-- 📧 **Email**: [Contact](mailto:your-email@example.com)
+- 📧 **Email**: [Contact](mailto:tonymaigenai@gmail.com)
 
 ---
 
